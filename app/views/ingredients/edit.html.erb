@@ -1,0 +1,5 @@
+<label>Edit Ingredient</label><br>
+<%= form_tag ingredient_path(@ingredient), id: "edit_ingredient_#{@ingredient.id}", method: "put" do %>
+    <%= text_field_tag :ingredient_name, @ingredient.name  %><br>
+    <%= submit_tag "Update Ingredient" %> 
+<% end %> 
